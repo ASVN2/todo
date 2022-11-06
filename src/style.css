@@ -1,0 +1,153 @@
+body {
+  background: rgb(161, 207, 207);
+  background: linear-gradient(257deg, rgb(161, 207, 207) 35%, rgb(208, 182, 130) 100%);
+  font-family: "Barlow", sans-serif;
+  font-family: "Comforter Brush", cursive;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Patrick Hand SC", cursive;
+}
+
+.holder {
+  margin: auto;
+  margin-top: 5%;
+  background-color: rgba(255, 255, 255, 0.343);
+  max-width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.holder .titile-task {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.holder .titile-task i {
+  font-size: 21px;
+  margin-left: 5px;
+}
+.holder .titile-task .task-number {
+  margin: 0 5px;
+  font-weight: bold;
+  font-size: 30px;
+}
+.holder .head {
+  padding: 20px;
+  text-align: center;
+  color: white;
+  background-color: rgba(255, 106, 61, 0.5);
+}
+.holder .head span {
+  font-size: 30px;
+}
+.holder .head p {
+  padding: 0;
+  margin: 0;
+}
+.holder .body {
+  margin: auto;
+}
+.holder .body .form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+.holder .body .form .text {
+  border: none;
+  background-color: transparent;
+  border: 1px solid rgba(255, 106, 61, 0.8823529412);
+  padding: 2px;
+  border-radius: 2px;
+  font-family: "Patrick Hand SC", cursive;
+  width: 70%;
+}
+.holder .body .form .text:focus {
+  outline: none;
+}
+.holder .body .form .add {
+  background-color: rgba(255, 106, 61, 0.6980392157);
+  margin-left: 5px;
+  padding: 4px 8px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  border-radius: 2px;
+}
+.holder .body ul {
+  counter-reset: counter 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.holder .body ul li:nth-child(odd) {
+  background-color: rgba(255, 106, 61, 0.0980392157);
+}
+.holder .body ul li.done {
+  text-decoration: line-through;
+}
+.holder .body ul li.done::before {
+  background-color: red;
+  color: white;
+}
+.holder .body ul li.done:hover {
+  background-color: red;
+}
+.holder .body ul li.done:hover::before,
+.holder .body ul li.done:hover .remove {
+  color: red;
+  background-color: white;
+}
+.holder .body ul li.done .remove {
+  background-color: red;
+  color: white;
+}
+.holder .body ul li.done .remove:hover {
+  background-color: rgb(1, 1, 1) !important;
+  color: white !important;
+}
+.holder .body ul li {
+  counter-increment: counter 1;
+  padding: 5px 10px;
+  position: relative;
+  padding-left: 30px;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.3s;
+  color: black;
+}
+.holder .body ul li:hover {
+  background-color: #ff6a3d;
+  color: white;
+}
+.holder .body ul li:hover .remove:hover {
+  background-color: rgba(250, 217, 99, 0.5450980392);
+}
+.holder .body ul li .remove {
+  border: 1px solid black;
+  padding: 2px 10px;
+  font-size: 13px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.holder .body ul li .remove:hover {
+  background-color: rgba(255, 106, 61, 0.4980392157);
+  color: white;
+}
+.holder .body ul li::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  content: counter(counter);
+  position: absolute;
+  height: 17px;
+  width: 17px;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(250, 217, 99, 0.5450980392);
+  border-radius: 50%;
+  border: 1px double black;
+}/*# sourceMappingURL=style.css.map */
